@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Pure Javascript Form</title>
+</head>
+<body>
+
+    
+  <nav>
+      <div class="container">
+        <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">Tunechi</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#" data-target="createGuideModal" class="modal-trigger">Create a Guide</a></li>
+            <li><a href="#" data-target="login-modal" class="modal-trigger">Sign in</a></li>
+            <li><a href="#">Sign out</a></li>
+            <li><a href="#" data-target="signup-modal" class="modal-trigger">Sign Up</a></li>
+        </ul>
+        </div>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="#" data-target="createGuideModal" class="modal-trigger">Create a Guide</a></li>
+    <li><a href="#" data-target="login-modal" class="modal-trigger">Sign in</a></li>
+    <li><a href="#">Sign out</a></li>
+    <li><a href="#" data-target="signup-modal" class="modal-trigger">Sign Up</a></li>
+  </ul>
+        <main>
+        <!-- Log in modal form -->
+        <div id="login-modal" class="modal">
+            <form id="LoginForm" class="modal-content">
+                <h5>Log In</h5>
+                <div>
+                    <label for="email">Email Address:</label>
+                    <input type="text" name="email">
+                </div>
+                <div>
+                    <label for="email">Password:</label>
+                    <input type="password" name="password">
+                </div>
+                <button class="waves-effect waves-light btn">Submit</button>
+            </form>
+          </div>
+            <!-- sign up modal form -->
+            <div id="signup-modal" class="modal">
+                <form id="form-given" class="modal-content">
+                    <h4>Create an Acccount</h4>
+                    <div>
+                        <label for="first-name">First Name:</label>
+                        <input type="text" name="first-name">
+                    </div>
+                    <div>
+                        <label for="name">Last Name:</label>
+                        <input type="text" name="last-name">
+                    </div>
+                    <div>
+                        <label for="email">Email Address:</label>
+                        <input type="text" name="email">
+                    </div>
+                    <div>
+                        <label for="email">Password:</label>
+                        <input type="password" name="password">
+                    </div>
+                    <button class="waves-effect waves-light btn">Submit</button>
+                </form>
+              </div>
+
+              <!-- Create a Guide page -->
+
+              <div id="createGuideModal" class="modal">
+                  <div class="modal-content">
+                      <form>
+                          <h5>Create a Guide</h5>
+                          <div>
+                              <label for="title">Title</label>
+                              <input type="text" name="title" id="">
+                          </div>
+                          <div>
+                              <label for="summary">Details</label>
+                              <textarea name="summary" class="materialize-textarea" cols="30" rows="10"></textarea>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+              <!-- section -->
+              <section>
+                  <div class="container">
+
+  <ul class="collapsible">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+  </ul>
+                  </div>
+              </section>
+        </main>
+    <div class="container">
+
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+
+<script src="/__/firebase/7.20.-/firebase-auth.js"></script>
+<script src="/__/firebase/7.20.-/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyAmgFsylMvNuBliDTJLxt36s5wYK2rZk6Y",
+    authDomain: "testing-c6d44.firebaseapp.com",
+    databaseURL: "https://testing-c6d44.firebaseio.com",
+    projectId: "testing-c6d44",
+    storageBucket: "testing-c6d44.appspot.com",
+    messagingSenderId: "1068000377608",
+    appId: "1:1068000377608:web:63fb94a4b3cd8f716a8abd",
+    measurementId: "G-N29PVHKB5N"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

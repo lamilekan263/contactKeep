@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Pure Javascript Form</title>
+</head>
+<body>
+
+    
+  <nav>
+      <div class="container">
+        <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">Tunechi</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="sass.html">Create a Guide</a></li>
+            <li><a href="#" data-target="login-modal" class="modal-trigger">Sign in</a></li>
+            <li><a href="collapsible.html">Sign out</a></li>
+            <li><a href="#" data-target="signup-modal" class="modal-trigger">Sign Up</a></li>
+        </ul>
+        </div>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="sass.html">Create a Guide</a></li>
+            <li><a href="#" data-target="login-modal">Sign in</a></li>
+            <li><a href="collapsible.html">Sign out</a></li>
+            <li><a href="#" data-target="signup-modal" class="modal-trigger">Sign Up</a></li>
+  </ul>
+        <main>
+        <!-- Log in modal form -->
+        <div id="login-modal" class="modal">
+            <form id="LoginForm" class="modal-content">
+                <h4>Create an Acccount</h4>
+                <div>
+                    <label for="email">Email Address:</label>
+                    <input type="text" name="email">
+                </div>
+                <div>
+                    <label for="email">Password:</label>
+                    <input type="password" name="password">
+                </div>
+                <button class="waves-effect waves-light btn">Submit</button>
+            </form>
+          </div>
+            <!-- sign up modal form -->
+            <div id="signup-modal" class="modal">
+                <form id="form-given" class="modal-content">
+                    <h4>Create an Acccount</h4>
+                    <div>
+                        <label for="first-name">First Name:</label>
+                        <input type="text" name="first-name">
+                    </div>
+                    <div>
+                        <label for="name">Last Name:</label>
+                        <input type="text" name="last-name">
+                    </div>
+                    <div>
+                        <label for="email">Email Address:</label>
+                        <input type="text" name="email">
+                    </div>
+                    <div>
+                        <label for="email">Password:</label>
+                        <input type="password" name="password">
+                    </div>
+                    <button class="waves-effect waves-light btn">Submit</button>
+                </form>
+              </div>
+
+              <!-- Create a Guide page -->
+
+              <div class="modal">
+                  <div class="modal-content">
+                      <form>
+                          <div>
+                              <label for="title"></label>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+        </main>
+    <div class="container">
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
